@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding:0;
+}
+.process{
+    width:1200px;
+    height:80px;
+    display: block;
+    line-height: 80px;
+
+    margin:20px auto;
+}
+.process .left_logo{
+    float: left;
+}
+.process .fr_process{
+    position: relative;
+    width:600px;
+    height:100%;
+    display: block;
+    float: right;
+
+}
+.process .fr_process .circle{
+    width:30px;
+    height:30px;
+    display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    font-size:16px;
+    font-weight:bold;
+    text-align: center;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    background: rgb(166,166,166);
+
+}
+.process .fr_process .on{
+    background: rgb(153,204,153);
+}
+.process .fr_process .trangle{
+    width:200px;
+    height:4px;
+    display: inline-block;
+    background: rgb(166,166,166);
+}
+.process .fr_process .on{
+    background: rgb(153,204,153);
+}
+.process .fr_process .info{
+    position: absolute;
+    top:40px;
+    left:-140px;
+}
+.process .fr_process .info a{
+    color: #666;
+    font-size: 14px;
+    width:100px;
+    height:10px;
+    display:inline-block;
+    margin-left: 137px;
+}
+.remind{
+    width:1200px;
+    height:40px;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    line-height:40px;
+    font-size: 14px;
+    color: #b40c10;
+    background: rgb(255,245,245);
+    border:1px solid  #b40c10;
+}
+.remind span{
+    margin-right:10px ;
+}
+.choose_add{
+    width:1200px;
+    height:40px;
+    margin:20px auto;
+    display: block;
+
+}
+.choose_add span{
+    margin: 0 10px 0 10px;
+    font-size: 14px;
+}
+ .title{
+    font-size:26px !important;
+
+}
+ .tables{
+     width:1200px;
+     height:40px;
+     display: block;
+     margin:20px auto;
+     line-height: 40px;
+     border:1px solid #ccc;
+     box-shadow: 1px 0 4px #ccc;
+ }
+ .tables .choose{
+     margin-left: 10px;
+     float: left;
+ }
+.tables .choose span{
+    margin-left: 60px;
+}
+ .tables .fr_title{
+     width:800px;
+     height:100%;
+     display: inline-block;
+     float: right;
+ }
+.tables .fr_title span{
+    width:130px;
+    height:30px;
+    text-align: center;
+    display: inline-block;
+
+    margin-left: 20px;
+}
+.content{
+    width:1200px;
+
+    line-height: 140px;
+    border:1px solid #ccc;
+    margin:0 auto;
+    position: relative;
+}
+.checkbox{
+    margin-left: -25px;
+}
+.content .main{
+    position: relative;
+    left:100px;
+
+}
+.main .main_left{
+    position: absolute;
+    top:0px;
+}
+.main_left img{
+    width:100px;
+    height:100px;
+}
+.main_left span{
+    float: right;
+    margin-top: -42px;
+    margin-left: -81px;
+    font-size: 12px;
+}
+
+.main_left .low{
+    line-height: 20px;
+    text-align: center;;
+    font-size: 12px;
+    width:80px;
+    height:20px;
+    float: right;
+    display: inline-block;
+    margin-top: 64px;
+    border:1px solid #b40c10;
+}
+.main .main_right{
+    position: absolute;
+    top:0;
+    right:75px;
+}
+.main .main_right span{
+    width:130px;
+    display: inline-block;
+    margin-left:26px;
+}
+.quantity{
+    width:130px;
+    height:30px;
+    right:60px;
+    display: inline-block;
+    position: relative;
+    
+    line-height: 30px;
+    border:1px solid #666;
+}
+.quantity a{
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+.quantity .left{
+
+    width:20%;
+    height:30px;
+    display: inline-block;
+    border-right:1px solid #666;
+}
+.quantity .mid{
+
+    width:40%;
+    height:30px;
+    display: inline-block;
+    text-align: center;
+    border-right:1px solid #666;
+}
+.footer{
+    width:1200px;
+    height:60px;
+
+    background: rgb(242,242,242);
+    margin:0 auto;
+    display: block;
+}
+
+.footer .fl{
+    display: inline-block;
+    width:400px;
+    height:60px;
+    line-height: 60px;
+}
+.footer .fl span{
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: "宋体";
+}
+.footer .fl input{
+    margin-left: 10px;
+}
+.footer .fl .goOn{
+    width:100px;
+    height:30px;
+    text-align: center;
+    color: blue;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    background: #fff;
+}
+.footer .fr{
+    width:400px;
+
+    display: block;
+    float: right;
+    height:60px;
+    line-height: 60px;
+}
+.footer .fr h3{
+    float: left;
+}
+.footer .fr .pay{
+    width:100px;
+    height:60px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    background:#b40c10 ;
+    cursor: pointer;
+    font-family: "微软雅黑";
+}
+.price{
+    color: #666;
+}
+.totalPrice{
+    font-size: 18px;
+    color: #b40c10;
+    font-weight: bold;
+}
+.footer .fr .total{
+    font-size: 18px;
+    color: #b40c10;
+    font-weight: bold;
+}
+
+/*
+确认删除订单模态框
+*/
+.login_wrap{
+
+    -webkit-transform: translate(0,-1000px);
+    -moz-transform: translate(0,-1000px);
+    -o-transform: translate(0,-1000px);
+    -ms-transform: translate(0,-1000px);
+    transform: translate(0,-1000px);
+}
+.dis{
+    display: block !important;
+}
+.showIn{
+
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(-0,0);
+    -o-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.login_wrap span{
+    width:100%;
+    height:40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top:60px;
+    text-align: center;;
+}
+.confirm{
+    width:100%;
+    position: absolute;
+    bottom:10px;
+    line-height: 40px;
+    height:40px;
+
+}
+.jump_show{
+    display: block;
+}
+.confirm .no{
+    width:100px;
+    height:40px;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 40px;
+    background: mediumseagreen;
+    color: #fff;
+    cursor: pointer;
+    border:1px solid #ccc;
+}
+.confirm .yes{
+    width:100px;
+    height:40px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    margin-right: 40px;
+    border:1px solid #ccc;
+}
+.suc_info{
+    width:1200px;
+    height:400px;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+
+    border:1px solid #ccc;
+    box-shadow: 2px 0 6px #ccc;
+}
+.suc_info h1{
+    color: green;
+    margin-top: 200px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.suc_info .shopMore{
+    margin-top: 10px;
+}

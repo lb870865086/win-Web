@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/cart.css">
+
+
+    <script src="/public/js/jquery-2.1.1.js"></script>
+    <script src="/public/js/index.js"></script>
+    <script src="/public/js/login.js"></script>
+    <script src="/public/js/vue.js"></script>
+    <script src="/public/js/vue-resource.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="topHeader">
+        <div class="topCenter">
+            <div class="topHeaderLeft">
+                <div class="clearfix">
+                    <p>欢迎来到酒仙网&nbsp;&nbsp;!</p>
+                    <a href="javascript:;">请登录</a>
+                    <a href="javascript:;">免费注册</a>
+                </div>
+            </div>
+            <div class="topHeaderRight">
+                <ul>
+                    <li  class="li1">
+                        <div class="myJiuixan">
+                            <a href="#">我的酒仙</a>
+                            <s class="publicIcon"></s>
+                        </div>
+                        <div class="myJiuxianDrapbox"></div>
+                    </li>
+                    <li class="li2">
+                        <a href="#">CEO邮箱</a>
+                    </li>
+                    <li class="li3">
+                        <i class="public"></i>
+                        <a href="#">
+                            购物车<span class="count">0</span>件
+                        </a>
+                    </li>
+                    <li class="li4">
+                        <a href="#">社区</a>
+                    </li>
+                    <li class="li5">
+                        <a href="#">招商入驻</a>
+                    </li>
+                    <li class="li6">
+                        <a href="#">手机逛酒仙</a>
+                        <div class="drapDown"></div>
+                    </li>
+                    <li class="li7">
+                        <i class="public"></i>
+                        <a href="#">网站导航</a>
+                        <s class="public"></s>
+                        <div class="navBox" style="display: none">
+                            <div class="subItem_first">
+                                <h3>购物</h3>
+                                <div class="snItm_con">
+                                    <a href="#">白酒</a>
+                                    <a href="#">葡萄酒</a>
+                                    <a href="#">洋酒</a>
+                                    <a href="#">啤酒</a>
+                                    <a href="#">保健酒</a>
+                                    <a href="#">黄酒</a>
+                                </div>
+                            </div>
+                            <div class="subItem_two">
+                                <h3>活动</h3>
+                                <div class="snItm_con">
+                                    <a href="#">进口馆</a>
+                                    <a href="#">整箱套装</a>
+                                    <a href="#">清仓</a>
+                                    <a href="#">闪团</a>
+                                    <a href="#">新品发现</a>
+                                    <a href="#">值得买</a>
+                                </div>
+                            </div>
+                            <div class="subItem_third">
+                                <h3>其它</h3>
+                                <div class="snItm_con">
+                                    <a href="#">会员中心</a>
+                                    <a href="#">社区</a>
+                                    <a href="#">常见问题</a>
+                                    <a href="#">礼品卡</a>
+                                    <a href="#">招商入驻</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li8">
+                        <i class="public"></i>
+                        <a href="#">客户服务</a>
+                        <div class="dropBox" style="display:none">
+                            <a href="#">常见问题</a>
+                            <a href="#">配送说明</a>
+                            <a href="#">售后服务</a>
+                        </div>
+                    </li>
+                    <li class="li9">
+                        <a>客服热线<span class="tell">400-617-9999</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--顶部进度条-->
+    <div class="process">
+        <div class="left_logo">
+            <img src="/public/img/logo.png" alt="">
+        </div>
+        <div class="fr_process">
+            <a href="javascript:;" class="circle on">1</a><a href="javascript:;" class="trangle on"></a>
+            <a href="javascript:;" class="circle">2</a><a href="" class="trangle"></a><a href="javascript:;" class="circle">3</a>
+            <div class="info"> <a href="">我的购物车</a><a href="">确认订单信息</a><a href="">成功提交订单</a></div>
+
+        </div>
+    </div>
+    <div class="remind"><span><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>自营商品实付满100元免运费，偏远地区满1000元免运费</div>
+    <div class="choose_add">
+        <span class="title">购物车</span>|<span>湖北省<i class="fa fa-angle-down" aria-hidden="true"></i></span><span class="login_info">现在<a>登陆</a>，您购物车中的商品将永久保存</span>
+    </div>
+    <div class="tables">
+        <div class="title_wrap">
+            <div class="choose"><input type="checkbox">全选<span>商品名称</span></div>
+            <div class="fr_title">
+                <span>酒仙价</span>
+                <span>送金币</span>
+                <span>数量</span>
+                <span>商品合计</span>
+                <span>操作</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        {% raw %}
+        <div class="main" v-for="item in productList">
+            <input type="checkbox" class="checkbox" v-bind:class="{'check':item.checked}" @click="select(item)">
+            <div class="main_left">
+                <img   alt="" v-bind:src= "item.producImg">
+                <span class="proName" > {{item.productName}}</span>
+                <div class="low">抄底价</div>
+            </div>
+            <div class="main_right">
+                <span class="price">{{item.productPrice | formateMoney}}</span>
+                <span>{{item.sendPrice |formateNum}}</span>
+            <span>
+                <span class="quantity">
+                    <a class="left" @click="changeMoney(item,-1)">-</a>
+                    <a class="mid">{{item.productQuenty}}</a>
+                    <a class="right" @click="changeMoney(item,1)">+</a>
+                </span>
+            </span>
+                <span class="totalPrice">{{item.productPrice * item.productQuenty | formateMoney}}</span>
+            <span>
+                <a href="javascript:;" @click="deflag = true"  >删除</a><a href="">收藏</a>
+            </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="fl">
+            <input type="checkbox" @click="checkAllpage"><span>全选</span><span class="delete">删除选中商品</span><span class="clearCar">清空购物车</span>
+            <span class="goOn">继续购物</span>
+        </div>
+        <div class="fr">
+            <h3>总计（不含运费）：</h3><span class="total">{{totalMoney | formateMoney}}</span>
+            <a href="/user/address"> <span class="pay">去结算</span></a>
+        </div>
+
+    </div>
+    <div class="jump_mask " v-bind:class="{'jump_show':deflag}">
+        <div class="login_wrap dis" v-bind:class="{'showIn':deflag}">
+            <span >确认删除订单吗？</span>
+            <div class="confirm">
+                <div class="yes" @click="delProduct">确认</div>
+                <div class="no" @click="deflag = false">取消</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endraw %}
+</body>
+<script>
+    $(function(){
+
+        new Vue({
+            el:"#app",
+            data:{
+                productList:[],
+                totalMoney:0,
+                deflag:false,
+                curProduct:''
+            },
+            filters:{
+              formateMoney:function(val){
+                  return "￥" +val.toFixed(2) + "元";
+              },
+              formateNum:function(num){
+                  return num+"金币"
+              }
+            },
+            mounted:function(){
+                this.createView()
+            },
+            methods:{
+                createView:function(){
+
+            var _this = this;
+            var a = this.$http.get('/public/js/package.json').then(function(res){
+
+                _this.productList = res.body.result.productList;
+                _this.totalMoney = res.body.result.totalMoney;
+            })
+
+        },
+                changeMoney:function(product,way){
+                    if(way<0){
+                        product.productQuenty--;
+                        if(product.productQuenty<1){
+                            product.productQuenty = 1
+                        }
+                    }else{
+                        product.productQuenty++;
+                    }
+                    this.addMoney();
+                },
+                select:function(item){
+                    if(typeof item.checked == "undefined"){
+                        //局部监听
+                        this.$set(item,"checked",true)
+                    }else{
+                        item.checked = !item.checked;
+                    }
+                    this.addMoney()
+                },
+                checkAllpage:function(){
+                  this.checkAll = ! this.checkAll;
+                    var _this = this;
+                    _this.productList.forEach(function(item,index){
+                        if(typeof item.checked == 'undefined'){
+                            _this.$set(item,"checked",_this.checkAll);
+                        }else{
+                            item.checked = _this.checkAll;
+                        }
+
+                    })
+                    this.addMoney();
+                },
+                addMoney:function(){
+                    var _this = this;
+                    this.totalMoney = 0;
+                    _this.productList.forEach(function(item,index){
+                        if(item.checked){
+                            _this.totalMoney += item.productPrice * item.productQuenty;
+                        }
+                    })
+                },
+                delProduct:function(item){
+                    this.deflag = true;
+                    this.curProduct = item;
+                },
+                delProduct:function(){
+                    var index = this.productList.indexOf(this.curProduct);
+                    this.productList.splice(index,1)
+                    this.deflag = false;
+                }
+            }
+
+        })
+    })
+</script>
+</html>

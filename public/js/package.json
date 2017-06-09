@@ -1,0 +1,63 @@
+{
+"message":"",
+  "status":"1",
+  "result":{
+    "totalMoney":0,
+    "productList":[
+      {
+        "productId":"1001",
+        "productName":"52°扳倒井 500ml",
+        "productPrice":29,
+        "sendPrice":189,
+        "haveGoods":true,
+        "checkAll":false,
+        "productQuenty":1,
+        "producImg":"/public/img/cartImg5.jpg"
+      },
+      {
+        "productId":"1002",
+        "productName":"52°扳倒井 样品酒500ml(6瓶装)",
+        "productPrice":474,
+        "sendPrice":237,
+        "haveGoods":true,
+        "productQuenty":1,
+
+        "producImg":"/public/img/cartImg2.jpg"
+      },
+      {
+        "productId":"1003",
+        "productName":"52°扳倒井 1915酒庄(双瓶装)",
+        "productPrice":378,
+        "sendPrice":189,
+        "productQuenty":1,
+        "haveGoods":true,
+
+        "producImg":"/public/img/cartImg1.jpg"
+      },
+      {
+        "productId":"1004",
+        "productName":"扳倒井金钻 1000ml（双瓶装）",
+        "productPrice":218,
+        "sendPrice":109,
+        "haveGoods":true,
+        "productQuenty":1,
+
+        "producImg":"/public/img/cartImg3.jpg"
+      },
+      {
+        "productId":"1005",
+        "productName":"西凤情酒 460ml",
+        "productPrice":29,
+        "sendPrice":14,
+        "haveGoods":true,
+        "productQuenty":1,
+
+        "producImg":"/public/img/cartImg4.jpg"
+      }
+
+    ]
+
+  }
+
+
+}

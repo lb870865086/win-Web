@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="/public/css/resigner.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+    <script src="/public/js/jquery-2.1.1.js"></script>
+    <script src="/public/js/index.js"></script>
+    <script src="/public/js/login.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="top_mid">
+            <div class="f_l">
+                <img src="/public/img/logo.png" alt="">
+            </div>
+            <div class="f_slogn">
+                <img src="/public/img/slogan.jpg" alt="">
+            </div>
+        </div>
+        <div class="f_r">
+            <div class="text_wrap">
+                <p>欢迎来到酒仙网!</p>
+                <a href="/" class="lg">请登录</a>
+                <div class="select">
+                    <a href="" class="helpCen">帮助中心<span><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+            <div class="slide_detail">
+                <ul class="slidedown ">
+                    <li  class="helpCen"></li>
+                    <li class="helpCen"><span>配送说明</span></li>
+                    <li  class="helpCen"><span>支付方式</span></li>
+                    <li  class="helpCen"><span>售后服务</span></li>
+                    <li  class="helpCen"><span>企业客户</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="mid">
+        <div class="mid_top">
+            <div class="personal ">个人用户注册</div>
+            <div class="company active">企业用户注册</div>
+        </div>
+        <div class="mid_main"  >
+            <div class="form_container">
+
+                <!--注册页面-->
+                <form action="" method="post"  >
+                    <label for="" class="form_control">
+                       <div class="form_title tell_phone">手机号</div>
+                            <span><i class="fa fa-user" aria-hidden="true"></i><input type="text" name="username" placeholder="请输入11位手机号码" class="tellPhone"></span>
+                        <i class="fa fa-check-circle showMes" aria-hidden="true" ></i>
+                        <i class="warn" aria-hidden="true" ></i>
+                    </label>
+                    <label for="" class="form_control">
+                        <div class="form_title checkNum"> 验证码</div>
+                        <span><i class="fa fa-envelope-open-o" aria-hidden="true"></i><input type="text" placeholder="请输入6位数验证码" class="checkform"><p class="check">JHji</p></span>
+                        <i class="fa fa-check-circle showMes" aria-hidden="true"></i>
+                        <i class="warn" aria-hidden="true" ></i>
+                    </label>
+                    <label for="" class="form_control">
+                        <div class="form_title passWord" > 设置密码</div>
+                            <span><i class="fa fa-lock" aria-hidden="true"></i><input type="password" name="password" placeholder="以字母开头，6-18位字符、数字和下划线" class="pass"></span>
+                        <i class="fa fa-check-circle showMes" aria-hidden="true"></i>
+                        <i class="warn" aria-hidden="true" ></i>
+                    </label>
+                    <label for="" class="form_control">
+                        <div class="form_title repeatPassWord" >确认密码</div>
+                        <span><i class="fa fa-lock" aria-hidden="true" ></i><input type="password" name="repassword" placeholder="请重复密码" class="repass"> </span>
+                        <i class="fa fa-check-circle showMes" aria-hidden="true"></i>
+                        <i class="warn" aria-hidden="true" ></i>
+                    </label>
+                    <div class="resigner_agree">
+                        <input type="checkbox" checked="checked" class="confirm"></input><span class="agree">我已阅读并同意 <a>《酒仙网用户注册协议》</a></span>
+                        <div class="submit"><span>立即注册</span></div>
+                    </div>
+
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+
+        <!--注册成功页面-->
+        <div class="resigner_suc" style="display: none;">
+            <div class="suc_top">
+                <img src="/public/img/1.png" alt="">
+            </div>
+            <div class="suc_mid">
+                恭喜！注册成功<br>
+                <p>您不仅可以通过手机号登陆，也可以用jxw8767657登陆酒仙网</p>
+                <a href="/" class="go">去购物</a>
+            </div>
+            <div class="suc_bottom"></div>
+        </div>
+    </div>
+    <!--注册页面结束-->
+    <div class="bottom"></div>
+</div>
+</body>
+</html>

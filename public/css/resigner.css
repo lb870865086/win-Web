@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+}
+p,a{
+    font-size:12px;
+    color: #666;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.container{
+    width: 100%;
+    height:100%;
+    display: block;
+    background: url("../../public/img/bg.jpg") repeat-x ;
+}
+.top{
+    width:100%;
+    height:90px;
+    background: #fff;
+    display: block;
+    z-index: 2;
+    box-shadow: 1px 0 16px #ccc;
+}
+.top_mid{
+    width:1000px;
+    height:90px;
+    margin:0 auto;
+    display: block;
+   
+}
+.mid{
+    width:100%;
+    height:600px;
+    display: block;
+
+}
+.f_l,.f_slogn{
+    width:150px;
+    height:80px;
+    padding:10px 10px 10px 10px;
+    box-sizing: border-box;
+
+    display: block;
+    float: left;
+
+}
+.f_r{
+    width:400px;
+    height:90px;
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+.text_wrap{
+    height:50px;
+    width:300px;
+    top:60px;
+    z-index:10000;
+    position: relative;
+
+
+}
+.text_wrap a,p,.select {
+   margin-left: 10px;
+    float: left;
+
+}
+.text_wrap .lg{
+
+    color: blue;
+   
+}
+.select a span{
+    width:16px;
+    height:16px;
+    display: block;
+    float: right;
+
+    border:1px solid #ccc;
+    margin-left: 5px;
+
+}
+.select a span i{
+    left:50%;
+    margin-left: 4px;
+}
+.slide_detail{
+    display: none;
+    height:160px;
+    width:84px;
+    border:1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    right:158px;
+    z-index: 1000;
+}
+.slidedown{
+    width:100%;
+    display: block;
+
+}
+.slidedown li{
+    font-size:12px;
+    color: #666;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    display: block;
+    border-bottom: 1px dashed #ccc;
+}
+.slidedown li span{
+    margin-left: 6px;
+}
+.mid{
+
+    width:994px;
+    height:540px;
+    display: block;
+    margin:60px auto;
+    background: #fff;
+    border:1px solid #ccc;
+    box-shadow: 1px 0 10px #ccc;
+    position: relative;
+
+}
+.mid .mid_top{
+    width:300px;
+    position: absolute;
+    top:-41px;
+    right:0px;
+    height:40px;
+
+}
+
+.mid .mid_top div{
+    border-radius: 2px;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    background: #fff;
+    color:rgb(255,153,0);
+    text-align: center;
+    float: left;
+    margin-left: 8px;
+    width:110px;
+    height:40px;
+    line-height: 40px;
+    display: block;
+    font-size: 14px;
+}
+.mid .mid_top .active{
+    color: #fff;
+    background:rgb(255,153,0);
+}
+.mid .resigner_suc{
+    width:600px;
+    height:400px;
+    display: block;
+    margin:80px auto;
+    text-align: center;
+
+    
+}
+.mid .suc_mid{
+
+    text-align: center;
+    display: block;
+    width:100%;
+    height:200px;
+    font-size: 18px;
+    color: green;
+}
+.mid .suc_mid p{
+    width:100%;
+    height:100px;
+    font-size:14px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+.mid .suc_mid .go{
+    width:150px;
+    height:50px;
+    margin:100px auto;
+    display: block;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height:30px;
+    background:rgb(180,12,16) ;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.form_container{
+    width:470px;
+    height:422px;
+    margin:70px auto;
+
+}
+.form_control{
+    height:42px;
+    width:400px;
+    display: block;
+    margin:14px auto;
+
+}
+.form_control span{
+    width:300px;
+    height:42px;
+    display: block;
+    border:1px solid #ccc;
+    line-height: 42px;
+}
+.form_control span i{
+    margin-left: 8px;
+    font-size: 24px;
+    color: #ccc;
+    
+    background: none;
+
+}
+.form_control .showMes{
+    float: right;
+    margin-top: 14px;
+    margin-right: -20px;
+    display: none;
+    color:rgb(255,153,0);
+}
+.warn{
+    font-size:12px;
+    font-family: "微软雅黑";
+    float: right;
+    margin-top: 12px;
+    margin-right: -138px;
+    display: none;
+    color:red;
+
+
+}
+.form_control span input{
+    margin-left: 6px;
+    height:36px;
+    width: 260px;
+    border:none;
+    outline: none;
+}
+.check{
+
+    position: absolute;
+    right:10px;
+    top:0px;
+    color: #0000FF;
+    text-shadow: 0 6px 4px #666;
+    font-size: 16px;
+    z-index: 1000;
+}
+.form_control .form_title{
+    line-height: 42px;
+    text-align: center;
+
+    width:97px;
+    height:42px;
+    display: block;
+}
+.form_control span,.form_title{
+    position: relative;
+    float: left;
+}
+.resigner_agree{
+    width:470px;
+    height:42px;
+    text-align: center;
+    display: block;
+    position: relative;
+    left:17px;
+    margin:0 auto;
+}
+.resigner_agree .agree{
+
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+}
+.resigner_agree .agree a{
+    color: blue;
+}
+.resigner_agree .submit{
+    position: relative;
+    top:10px;
+    left:32px;
+    width:307px;
+    height: 42px;
+    display: block;
+    margin:0 auto;
+    color: #fff;
+    letter-spacing: 4px;
+    line-height: 42px;
+    font-size: 18px;
+    background: rgb(180,12,16);
+}
